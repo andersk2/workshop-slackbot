@@ -1,4 +1,5 @@
 'use strict';
+import randomEmojiGenerator from 'random-emoji-generator';
 
 // We import the package that we installed earlier
 const SlackBot = require('slackbots');
@@ -14,18 +15,6 @@ const bot = new SlackBot({
 let unicorn = {
   'icon_emoji': ':unicorn_face:'
 };
-
-const emojis = [
-  ':simple_smile:',
-  ':heart:',
-  ':joy:',
-  ':grinning:',
-  ':sunglasses:',
-  ':smile_cat:',
-  ':alien:',
-  ':santa:'
-]
-
 
 // This will be invoked when our bot has connected to Slack
 bot.on('start', () => {
@@ -51,6 +40,6 @@ bot.on('message', (data) => {
   // When the bot sees a message that is exactly ping
   if (data.text === 'ping') {
     // It will answer with pong
-    bot.postMessage(data.channel, emojis[Math.floor(Math.random()*emojis.length)], unicorn);
+    bot.postMessage(data.channel, randomEmojiGenerator(), unicorn);
   }
 });
