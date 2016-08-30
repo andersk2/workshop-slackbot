@@ -1,5 +1,5 @@
 {
-  "name": "workshop-slackbot",
+  "name": "workshop-slackbot-happybot",
   "version": "1.0.0",
   "description": "a slackbot to do happy things",
   "main": "index.js",
@@ -19,7 +19,6 @@
   "engines": {
     "node": ">=6.0.0"
   },
-  "private": true,
   "homepage": "https://github.com/andersk2/workshop-slackbot#readme",
   "dependencies": {
     "slackbots": "^0.5.2"
