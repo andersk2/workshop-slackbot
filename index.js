@@ -31,13 +31,13 @@ const emojis = [
 bot.on('start', () => {
   // Define channel, where bot exist.
   // You can adjust it there https://my.slack.com/services
-  bot.postMessageToChannel(
-    // We select a channel that our bot should write to
-    'general',
-    // The message that the bot should post to the channel
-    'Hello!',
-    unicorn
-  );
+  // bot.postMessageToChannel(
+  //   // We select a channel that our bot should write to
+  //   'general',
+  //   // The message that the bot should post to the channel
+  //   'Hello!',
+  //   unicorn
+  // );
 });
 
 // This will manage messages that are posted to the channel the bot is connect to
