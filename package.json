@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/andersk2/workshop-slackbot#readme",
   "dependencies": {
-    "slackbots": "^0.5.2"
+    "slackbots": "^0.5.2",
+    "random-emoji-generator": "^1.0.0"
   }
 }

@@ -1,5 +1,5 @@
 'use strict';
-import randomEmojiGenerator from 'random-emoji-generator';
+var randomEmojiGenerator = require('random-emoji-generator');
 
 // We import the package that we installed earlier
 const SlackBot = require('slackbots');
